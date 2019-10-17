@@ -33,9 +33,9 @@ Development server runs on port `8080`. If the default port is already in use on
 
 ### How to setup Netlify CMS
 
-- Deploy on netlify using the CLi or the Netlify bot for github.
+- Deploy on netlify using the CLi or the Netlify bot for [github](https://app.netlify.com/start).
 
-- Enable Identity for your app.
+- Enable Identity for your app https://docs.netlify.com/visitor-access/identity/
 
 - Go to `https://<your-domain>/admin` in order to access Netlify CMS.
 
