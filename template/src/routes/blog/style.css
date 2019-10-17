@@ -1,0 +1,66 @@
+.blogcontainer {
+  max-width: 728px;
+  width: 100%;
+  margin: 0 auto 10em;
+  line-height: 1.6rem;
+}
+
+.blogtitle {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.blogbody {
+  font-size: 1.1rem;
+}
+
+.blogbody img {
+  max-width: 100%;
+}
+
+.blogbody code {
+  max-width: 100%;
+}
+
+.blogbody pre {
+  max-width: 100%;
+  overflow: scroll;
+}
+
+.blogsubtitle {
+  color: #aaa;
+  display: block;
+  text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.blogcover {
+  height: 30vh;
+  background-size: cover;
+  background-color: #eee;
+  background-position: center;
+}
+
+.loadingPlaceholder .blogtitle {
+  height: 24px;
+}
+
+.loadingPlaceholder .blogsubtitle {
+  height: 18px;
+}
+
+.loadingBody {
+  height: 12px;
+  margin-bottom: 8px;
+}
+
+.loadingBody:nth-child(1) {
+  width: 90%;
+}
+
+.loadingBody:nth-child(3) {
+  width: 65%;
+}

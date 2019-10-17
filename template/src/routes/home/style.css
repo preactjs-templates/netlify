@@ -1,0 +1,91 @@
+.home {
+  padding: 56px 20px;
+  width: 100%;
+}
+
+.about {
+  display: flex;
+}
+
+.imageContainer {
+  flex: 1;
+}
+
+.image {
+	height: 30vw;
+	background-image: url(/assets/profile.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.quote {
+  flex: 1;
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/quotes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.details{
+	font-family: serif;
+	font-size: 32px;
+	font-style: italic;
+	padding-left: 32px;
+	text-align: center;
+	color: gray;
+	padding-bottom: 32px;
+}
+
+.author{
+	font-size: 16px;
+  color: black;
+}
+
+.bio{
+	margin: 40px auto;
+	display:flex;
+	justify-content: center;
+}
+
+.bioleft, .bioright{
+	max-width: 25%;
+	text-align: justify;
+}
+
+.bioleft{
+	padding-right: 16px;
+}
+
+.bioright{
+	padding-left: 16px;
+}
+
+@media all and (max-width: 728px) {
+	.home {
+		padding: 16px;
+	}
+
+  .about, .bio {
+		flex-direction: column;
+	}
+
+	.details {
+		padding: 16px 0 0 0;
+		font-size: 1.5rem;
+	}
+
+	.image {
+		height: 50vw;
+		width: 100%;
+	}
+
+	.bioleft, .bioright{
+		max-width: 100%;
+		text-align: justify;
+		padding: 0;
+	}
+}
+

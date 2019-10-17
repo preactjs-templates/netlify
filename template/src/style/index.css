@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Courgette&text=Jane%20Doe");
+
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0 1vw;
+	margin: 0;
+	background: #FAFAFA;
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 400;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#app {
+	height: 100%;
+}
+
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+.loading {
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-name: placeHolderShimmer;
+	animation-timing-function: linear;
+	background: #f6f7f9;
+	background-image: linear-gradient(to right, #f6f7f9 0%, #e9ebee 20%, #f6f7f9 40%, #f6f7f9 100%);
+	background-repeat: no-repeat;
+	background-size: 800px 104px;
+	position: relative;
+}
+
+@keyframes placeHolderShimmer{
+  0% {
+      background-position: -468px 0;
+  }
+  100% {
+      background-position: 468px 0;
+  }
+}

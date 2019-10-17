@@ -1,0 +1,18 @@
+.pageContact {
+  padding: 0 5%;
+}
+
+.pageTitle {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.pageTitle:after {
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  content: '';
+  width: 75%;
+  border-bottom: 2px solid #FFC107;
+}
