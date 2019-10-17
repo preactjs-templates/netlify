@@ -20,17 +20,21 @@ For detailed explanation on how things work, checkout the [CLI Readme](https://g
 
 ### How to setup Netlify CMS
 
-- Deploy on netlify using the CLi or the Netlify bot for [github](https://app.netlify.com/start).
+- Deploy on netlify using the CLI or the Netlify bot for [github](https://app.netlify.com/start).
 
 - Enable Git gateway https://docs.netlify.com/visitor-access/git-gateway/.
 
-- Enable Identity for your app https://docs.netlify.com/visitor-access/identity/
+- Enable Identity for your app https://docs.netlify.com/visitor-access/identity/.
 
-- Invite yourself to be the admin from the Identity tab in Netlify console.
+- For most Blogs, change (Identity > Settings > Registration preferences) to invite only.
+
+- Change the Invitation template in (Identity > Settings > Invitation template > Path to template) to `/invitation.html`
+
+- Invite yourself to the Identity tab in Netlify console.
 
 - Accept the invite from you mail.
 
-- Go to `https://<your-domain>/admin` in order to access Netlify CMS.
+- Done 👍🏻.
 
-- Re-deploy.
+*Note:* Go to `https://<your-domain>/admin` in order to access Netlify CMS.
 

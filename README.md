@@ -33,13 +33,24 @@ Development server runs on port `8080`. If the default port is already in use on
 
 ### How to setup Netlify CMS
 
-- Deploy on netlify using the CLi or the Netlify bot for [github](https://app.netlify.com/start).
+- Deploy on netlify using the CLI or the Netlify bot for [github](https://app.netlify.com/start).
 
-- Enable Identity for your app https://docs.netlify.com/visitor-access/identity/
+- Enable Git gateway https://docs.netlify.com/visitor-access/git-gateway/.
 
-- Go to `https://<your-domain>/admin` in order to access Netlify CMS.
+- Enable Identity for your app https://docs.netlify.com/visitor-access/identity/.
 
-- Re-deploy.
+- For most Blogs, change (Identity > Settings > Registration preferences) to invite only.
+
+- Change the Invitation template in (Identity > Settings > Invitation template > Path to template) to `/invitation.html`
+
+- Invite yourself to the Identity tab in Netlify console.
+
+- Accept the invite from you mail.
+
+- Done 👍🏻.
+
+*Note:* Go to `https://<your-domain>/admin` in order to access Netlify CMS.
+
 
 ### Fork It And Make Your Own
 
