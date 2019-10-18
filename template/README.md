@@ -28,8 +28,6 @@ For detailed explanation on how things work, checkout the [CLI Readme](https://g
 
 - For most Blogs, change (Identity > Settings > Registration preferences) to invite only.
 
-- Change the Invitation template in (Identity > Settings > Invitation template > Path to template) to `/invitation.html`
-
 - Invite yourself to the Identity tab in Netlify console.
 
 - Accept the invite from you mail.
