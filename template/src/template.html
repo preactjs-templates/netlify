@@ -6,15 +6,20 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>" />
+		<meta property="og:title" content="<%= (htmlWebpackPlugin.options.seo && htmlWebpackPlugin.options.seo.title) || htmlWebpackPlugin.options.title %>" />
 		<% if(htmlWebpackPlugin.options.seo && 'cover' in htmlWebpackPlugin.options.seo) {%>
 			<meta property="og:image" content="<%= htmlWebpackPlugin.options.seo.cover %>" />
-			<meta name="twitter:image:src" content="<%= htmlWebpackPlugin.options.seo.cover %>">
 		<% } %>
 		<% if(htmlWebpackPlugin.options.seo && 'subtitle' in htmlWebpackPlugin.options.seo) {%>
 			<meta property="og:description" content="<%= htmlWebpackPlugin.options.seo.subtitle %>" />
-			<meta property="twitter:description" content="<%= htmlWebpackPlugin.options.seo.subtitle %>" />
 			<meta property="description" content="<%= htmlWebpackPlugin.options.seo.subtitle %>" />
+		<% } %>
+		<meta name="twitter:card" content="<%= (htmlWebpackPlugin.options.seo && 'cover' in htmlWebpackPlugin.options.seo) ? 'summary_large_image' : 'summary'%>" />
+		<% if(htmlWebpackPlugin.options.seo && 'cover' in htmlWebpackPlugin.options.seo) {%>
+			<meta name="twitter:image" content="<%= htmlWebpackPlugin.options.seo.cover %>">
+		<% } %>
+		<% if(htmlWebpackPlugin.options.seo && 'subtitle' in htmlWebpackPlugin.options.seo) {%>
+			<meta property="twitter:description" content="<%= htmlWebpackPlugin.options.seo.subtitle %>" />
 		<% } %>
 		<% preact.headEnd %>
 	</head>
