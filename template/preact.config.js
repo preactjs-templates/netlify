@@ -2,9 +2,9 @@ const netlifyPlugin = require('preact-cli-plugin-netlify');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const imageminMozjpeg = require('imagemin-mozjpeg');
 
-module.exports = (config) => {
+module.exports = (config, env) => {
 	netlifyPlugin(config);
-	config.plugins.push(new ImageminPlugin({
+	env.isProd && config.plugins.push(new ImageminPlugin({
 		from: './build/assets/**',
 		pngquant: {
 			quality: '60'
