@@ -8,6 +8,7 @@
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
     "build": "preact build --prerenderUrls ./prerender-urls.js",
+    "serve": "sirv build --port 8080 --cors --single",
     "dev": "preact watch --prerenderUrls ./prerender-urls.js",
     "lint": "eslint src",
     "test": "jest"
@@ -27,12 +28,13 @@
     "jest-preset-preact": "^1.0.0",
     "markdown": "^0.5.0",
     "per-env": "^1.0.2",
-    "preact-cli": "^3.0.0-rc.6",
+    "preact-cli": "^3.0.0",
     "preact-render-spy": "^1.2.1",
+    "sirv-cli": "1.0.3",
     "webpack-bundle-analyzer": "^3.4.1"
   },
   "dependencies": {
-    "@preact/prerender-data-provider": "^0.0.1",
+    "@preact/prerender-data-provider": "^3.0.0",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "markdown-to-jsx": "^6.10.3",
