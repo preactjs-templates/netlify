@@ -4,9 +4,6 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "per-env",
-    "start:production": "npm run -s serve",
-    "start:development": "npm run -s dev",
     "build": "preact build --prerenderUrls ./prerender-urls.js",
     "serve": "sirv build --port 8080 --cors --single",
     "dev": "preact watch --prerenderUrls ./prerender-urls.js",
