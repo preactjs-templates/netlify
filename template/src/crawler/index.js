@@ -20,11 +20,11 @@ function getPreview(data) {
 
 function getFolders(source) {
 	const isDirectory = source => fs.lstatSync(source).isDirectory();
-	const isFile = source => !fs.lstatSync(source).isDirectory();
+	const isValidFile = source => !fs.lstatSync(source).isDirectory() && source.endsWith('.md');
 	const getAllListings = source =>
 		fs.readdirSync(source).map(name => join(source, name));
 	let allContent = getAllListings(source);
-	const edges = allContent.filter(isFile).map(file => {
+	const edges = allContent.filter(isValidFile).map(file => {
 		const data = fs.readFileSync(file, 'utf-8');
 		return {
 			id: file.substr(file.lastIndexOf('/') + 1),
