@@ -1,5 +1,3 @@
 node_modules
-/build
-/*.log
-
-package-lock.json
+.vscode
+build
